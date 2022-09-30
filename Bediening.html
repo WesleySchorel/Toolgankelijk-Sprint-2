@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Vervoerregio Amsterdam</title>
+</head>
+
+<body>
+    <div class="faq-section">
+        <header>
+            <img src="assets/Logo.png" alt="Logo">
+            <p>Verklaring Digitale toegankelijkheid | Bediening</p>
+        </header>
+        <button class="accordion">Zorg dat alle functies te bereiken en gebruiken zijn met alleen het toetsenbord</button>
+        <div class="panel">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <br>
+        <button class="accordion">Zorg dat een bezoeker die alleen het toetsenbord gebruikt niet vast komt te zitten op de pagina</button>
+        <div class="panel">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <br>
+        <button class="accordion">Geef bezoekers de mogelijkheid om sneltoetsen zelf in te stellen of uit te zetten</button>
+        <div class="panel">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <br>
+        <button class="accordion">Zorg voor een eenvoudige bediening voor acties die door aanraking of gebaren worden geactiveerd</button>
+        <div class="panel">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <br>
+        <button class="accordion">Gebruik niet alleen apparaatbewegingen voor het uitvoeren van een actie</button>
+        <div class="panel">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <br>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+        </ </html>

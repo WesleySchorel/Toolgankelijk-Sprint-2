@@ -6,7 +6,7 @@ body {
     margin: 0 auto;
   }
   
-  .faq-section {
+main {
     max-width: 760px;
     margin: 0 auto;
   }
@@ -19,7 +19,7 @@ body {
     font-size: 22px;
   }
   
-  .accordion {
+  .dispenser {
     background-color: #b9005f;
     color: #fff;
     cursor: pointer;
@@ -32,12 +32,12 @@ body {
     transition: 0.4s;
   }
   
-  .active, .accordion:hover {
+  .active, .dispenser:hover {
     background-color: #e80078;
     color: #fff;
   }
-  
-  .accordion:after {
+
+  .dispenser:after {
     content: '\002B';
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -57,9 +57,5 @@ body {
     transition: max-height 0.2s ease-out;
   }
   
-  hr {
-    border: 1px solid #b9005f;
-    margin-block: 20px;
-  }
 
   

@@ -1,97 +1,195 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css" />
-    <script src="scripts/script.js"></script>
     <title>Vervoerregio Amsterdam</title>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #b9005f;
+            overflow-x: hidden;
+            padding-top: 16px;
+        }
+
+        .sidebar a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #ffffff;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            color: #ffc2e2;
+        }
+
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            padding: 0px 10px;
+        }
+
+        .accordion {
+            background-color: #b9005f;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #e80078;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <main>
-        <header>
-            <img src="assets/Logo.png" alt="Logo">
-            <p>Verklaring Digitale toegankelijkheid</p>
-        </header>
-        <button class="dispenser">Afbeeldingen</button>
-        <div class="panel">
-            <ul>
-                <li>Zorg dat afbeeldingen in de code een tekstalternatief kunnen krijgen</li>
-                <li>Geef afbeeldingen die informatie overdragen een beschrijvend tekstalternatief</li>
-                <li>Geef complexe afbeeldingen een langere beschrijving</li>
-                <li>Geef afbeeldingen die ook een link zijn een tekstalternatief dat het doel van de link beschrijft</li>
-                <li>Zorg dat decoratieve afbeeldingen door hulptechnologieën genegeerd kunnen worden</li>
-                <li>Gebruik geen afbeeldingen van tekst</li>
-                <li>Zorg dat bewegende content kan worden gepauzeerd, gestopt of worden uitgezet</li>
-                <li>Gebruik geen content dat meer dan 3 keer per seconde flitst</li>
-            </ul>
-        </div>
-        <br>
-        <button class="dispenser">Bediening</button>
-        <div class="panel">
-            <ul>
-                <li>Zorg dat alle functies te bereiken en gebruiken zijn met alleen het toetsenbord</li>
-                <li>Zorg dat een bezoeker die alleen het toetsenbord gebruikt niet vast komt te zitten op de pagina</li>
-                <li>Geef bezoekers de mogelijkheid om sneltoetsen zelf in te stellen of uit te zetten</li>
-                <li>Zorg voor een eenvoudige bediening voor acties die door aanraking of gebaren worden geactiveerd</li>
-                <li>Gebruik niet alleen apparaatbewegingen voor het uitvoeren van een actie</li>
-            </ul>
-        </div>
-        <br>
-        <button class="dispenser">Media</button>
-        <div class="panel">
-            <ul>
-                <li>Zorg voor duidelijke labels en instructies bij invoervelden</li>
-                <li>Als veelgevraagde gegevens worden verzameld in een invoerveld, zorg dan dat het doel in de code is vastgelegd</li>
-                <li>Als een formulierveld verkeerd is ingevuld, benoem dan waar de fout zit en beschrijf wat de fout is</li>
-                <li>Als een formulierveld verkeerd is ingevuld, geef suggesties ter verbetering als dit mogelijk is</li>
-                <li>Zorg voor een extra controle bij het insturen van belangrijke formulieren</li>
-                <li>Zorg dat een tijdslimiet kan worden uitgezet, aangepast of worden verlengt</li>
-                <li>Maak bezoekers bewust van veranderingen in de inhoud</li>
-                <li>Laat een formulierveld dat focus krijgt of ingevuld wordt niet zomaar een grote gebeurtenis in gang zetten</li>
-            </ul>
-        </div>
-        <br>
-        <button class="dispenser">Navigatie</button>
-        <div class="panel">
-            <ul>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
-            </ul>
-        </div>
-        <br>
-        <button class="dispenser">Ontwerp</button>
-        <div class="panel">
-            <ul>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
-            </ul>
-        </div>
-        <br>
-        <button class="dispenser">Teksten</button>
-        <div class="panel">
-            <ul>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
-            </ul>
-        </div>
-        <br>
-        <button class="dispenser">Bediening</button>
-        <div class="panel">
-            <ul>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
-            </ul>
-        </div>
-        <br>
-</main>
+
+    <div class="sidebar">
+
+        <a href="#home"><i class="fa fa-fw fa-photo"></i> Afbeeldingen</a>
+        <a href="#services"><i class="fa fa-fw fa-keyboard-o"></i> Bediening</a>
+        <a href="#clients"><i class="fa fa-fw fa-user"></i> Formulieren</a>
+        <a href="#contact"><i class="fa fa-fw fa-file-image-o"></i> Media</a>
+        <a href="#contact"><i class="fa fa-fw fa-mouse-pointer"></i> Navigatie</a>
+        <a href="#contact"><i class="fa fa-fw fa-paint-brush"></i> Ontwerp</a>
+        <a href="#contact"><i class="fa fa-fw fa-book"></i> Teksten</a>
+    </div>
+
+    <div class="main">
+        <main>
+            <header>
+                <img src="assets/Logo.png" alt="Logo">
+                <p>Verklaring Digitale toegankelijkheid | Afbeeldingen</p>
+            </header>
+            <button class="dispenser">Zorg dat afbeeldingen in de code een tekstalternatief kunnen krijgen</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="dispenser">Geef afbeeldingen die informatie overdragen een beschrijvend
+                tekstalternatief</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="dispenser">Geef complexe afbeeldingen een langere beschrijving</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="dispenser">Geef afbeeldingen die ook een link zijn een tekstalternatief dat het doel van de
+                link beschrijft</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="dispenser">Zorg dat decoratieve afbeeldingen door hulptechnologieën genegeerd kunnen
+                worden</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="dispenser">Gebruik geen afbeeldingen van tekst</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="dispenser">Zorg dat bewegende content kan worden gepauzeerd, gestopt of worden
+                uitgezet</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="dispenser">Gebruik geen content dat meer dan 3 keer per seconde flitst</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+        </main>
         <script>
             var acc = document.getElementsByClassName("dispenser");
             var i;
@@ -108,4 +206,6 @@
                 });
             }
         </script>
-        </ </html>
+</body>
+
+</html>

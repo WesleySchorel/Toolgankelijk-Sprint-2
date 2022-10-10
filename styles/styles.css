@@ -152,6 +152,10 @@ button:hover {
     padding: 0;
   }
 
+  img{
+    width: 16em;
+  }
+
   .main{
     margin: 0;
   }

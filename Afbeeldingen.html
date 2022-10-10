@@ -42,11 +42,37 @@
             </p>
             <button class="accordion">Zorg dat afbeeldingen in de code een tekstalternatief kunnen krijgen</button>
             <div class="panel">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <p>Alle afbeeldingen moeten een tekstalternatief hebben. Een tekstalternatief kan op verschillende
+                    manieren worden toegevoegd:</p>
+                <h4>Tekstalternatief voor een < img> -element</h4>
+                <p>Bij een < img> -element wordt een tekstalternatief gegeven met behulp van het alt -attribuut.
+
+                        <br><br>In de code ziet dat er zo uit:</p>
+
+                <h4>Tekstalternatief voor een < svg> -element</h4>
+                <p>Bij een < svg> -element wordt een tekstalternatief gegeven met behulp van het title-element in de
+                        svg. Gebruik ook aria-attribuut role="img" om ervoor te zorgen dat zo veel mogelijk
+                        ondersteunende technologieën het < svg> -element herkennen als een afbeelding.
+
+                            <br><br>In de code ziet dat er zo uit:</p>
+
+                <h4>Tekstalternatief voor afbeeldingen die is geplaatst met CSS</h4>
+                <p>Aan een afbeelding die geplaatst is met CSS kan een tekstalternatief worden gegeven met een
+                    aria-label.
+
+                    <br><br>In de code ziet dat er zo uit:
+                </p>
+
+                <h4>Invulling van het Tekstalternatief</h4>
+                <p>De invulling van een tekstalternatief wordt bepaald door de functie die een afbeelding heeft. In
+                    veel
+                    gevallen draagt een afbeelding informatie over. Beschrijf dan in het tekstalternatief wat er op
+                    de
+                    afbeelding te zien is. Bij een afbeelding die ook een link is, gaat het juist om het beschrijven
+                    waar de link naar toe verwijst. Als een afbeelding geen informatie aan de pagina toevoegt, dan
+                    is
+                    het beter om het helemaal geen tekstalternatief te geven zodat het kan worden genegeerd door
+                    hulptechnologieën.</p>
             </div>
             <br>
             <button class="accordion">Geef afbeeldingen die informatie overdragen een beschrijvend
@@ -118,9 +144,9 @@
             <br>
         </main>
         <footer>
-            <p>Vond u deze pagina nuttig?</p>
-            <button type="button" name="ja-nee-button">Ja</button> <button type="button"
-                name="ja-nee-button">Nee</button>
+            <div id="feedback-button">Vond u deze pagina nuttig?</div>
+            <button onclick="myFunction()" type="button" name="ja-nee-button">Ja</button>
+            <button onclick="myFunction()" type="button" name="ja-nee-button">Nee</button>
         </footer>
         <script>
             var acc = document.getElementsByClassName("accordion");
@@ -136,6 +162,17 @@
                         panel.style.maxHeight = panel.scrollHeight + "px";
                     }
                 });
+            }
+
+
+
+            function myFunction() {
+                var x = document.getElementById("feedback-button");
+                if (x.innerHTML === "Bedankt voor uw feedback.") {
+                    x.innerHTML = "Vond u deze pagina nuttig?";
+                } else {
+                    x.innerHTML = "Bedankt voor uw feedback.";
+                }
             }
         </script>
 </body>

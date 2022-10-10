@@ -108,9 +108,9 @@
             <br>
         </main>
         <footer>
-            <p>Vond u deze pagina nuttig?</p>
-            <button type="button" name="ja-nee-button">Ja</button> <button type="button"
-                name="ja-nee-button">Nee</button>
+            <div id="feedback-button">Vond u deze pagina nuttig?</div>
+            <button onclick="myFunction()" type="button" name="ja-nee-button">Ja</button>
+            <button onclick="myFunction()" type="button" name="ja-nee-button">Nee</button>
         </footer>
         <script>
             var acc = document.getElementsByClassName("accordion");
@@ -126,6 +126,17 @@
                         panel.style.maxHeight = panel.scrollHeight + "px";
                     }
                 });
+            }
+
+
+
+            function myFunction() {
+                var x = document.getElementById("feedback-button");
+                if (x.innerHTML === "Bedankt voor uw feedback.") {
+                    x.innerHTML = "Vond u deze pagina nuttig?";
+                } else {
+                    x.innerHTML = "Bedankt voor uw feedback.";
+                }
             }
         </script>
 </body>

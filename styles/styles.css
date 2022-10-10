@@ -21,6 +21,10 @@ footer {
   text-align: center;
 }
 
+#feedback-button{
+  margin: 1em;
+}
+
 .accordion {
   background-color: #b9005f;
   color: #fff;
@@ -164,3 +168,5 @@ button:hover {
     display: none;
   }
 }
+
+

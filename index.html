@@ -15,13 +15,13 @@
 
     <div class="sidebar">
 
-        <a href="#home"><i class="fa fa-fw fa-photo"></i> Afbeeldingen</a>
-        <a href="#services"><i class="fa fa-fw fa-keyboard-o"></i> Bediening</a>
-        <a href="#clients"><i class="fa fa-fw fa-user"></i> Formulieren</a>
-        <a href="#contact"><i class="fa fa-fw fa-file-image-o"></i> Media</a>
-        <a href="#contact"><i class="fa fa-fw fa-mouse-pointer"></i> Navigatie</a>
-        <a href="#contact"><i class="fa fa-fw fa-paint-brush"></i> Ontwerp</a>
-        <a href="#contact"><i class="fa fa-fw fa-book"></i> Teksten</a>
+        <a href="Afbeeldingen.html"><i class="fa fa-fw fa-photo"></i> Afbeeldingen</a>
+        <a href="Bediening.html"><i class="fa fa-fw fa-keyboard-o"></i> Bediening</a>
+        <a href="Formulieren.html"><i class="fa fa-fw fa-user"></i> Formulieren</a>
+        <a href="Media.html"><i class="fa fa-fw fa-file-image-o"></i> Media</a>
+        <a href="Navigatie.html"><i class="fa fa-fw fa-mouse-pointer"></i> Navigatie</a>
+        <a href="Ontwerp.html"><i class="fa fa-fw fa-paint-brush"></i> Ontwerp</a>
+        <a href="Teksten.html"><i class="fa fa-fw fa-book"></i> Teksten</a>
     </div>
 
     <div class="main">
@@ -30,7 +30,7 @@
                 <img src="assets/Logo.png" alt="Logo">
                 <p>Verklaring Digitale toegankelijkheid | Afbeeldingen</p>
             </header>
-            <button class="dispenser">Zorg dat afbeeldingen in de code een tekstalternatief kunnen krijgen</button>
+            <button class="accordion">Zorg dat afbeeldingen in de code een tekstalternatief kunnen krijgen</button>
             <div class="panel">
                 <ul>
                     <li></li>
@@ -39,7 +39,7 @@
                 </ul>
             </div>
             <br>
-            <button class="dispenser">Geef afbeeldingen die informatie overdragen een beschrijvend
+            <button class="accordion">Geef afbeeldingen die informatie overdragen een beschrijvend
                 tekstalternatief</button>
             <div class="panel">
                 <ul>
@@ -49,7 +49,7 @@
                 </ul>
             </div>
             <br>
-            <button class="dispenser">Geef complexe afbeeldingen een langere beschrijving</button>
+            <button class="accordion">Geef complexe afbeeldingen een langere beschrijving</button>
             <div class="panel">
                 <ul>
                     <li></li>
@@ -58,7 +58,7 @@
                 </ul>
             </div>
             <br>
-            <button class="dispenser">Geef afbeeldingen die ook een link zijn een tekstalternatief dat het doel van de
+            <button class="accordion">Geef afbeeldingen die ook een link zijn een tekstalternatief dat het doel van de
                 link beschrijft</button>
             <div class="panel">
                 <ul>
@@ -68,7 +68,7 @@
                 </ul>
             </div>
             <br>
-            <button class="dispenser">Zorg dat decoratieve afbeeldingen door hulptechnologieën genegeerd kunnen
+            <button class="accordion">Zorg dat decoratieve afbeeldingen door hulptechnologieën genegeerd kunnen
                 worden</button>
             <div class="panel">
                 <ul>
@@ -78,7 +78,7 @@
                 </ul>
             </div>
             <br>
-            <button class="dispenser">Gebruik geen afbeeldingen van tekst</button>
+            <button class="accordion">Gebruik geen afbeeldingen van tekst</button>
             <div class="panel">
                 <ul>
                     <li></li>
@@ -87,7 +87,7 @@
                 </ul>
             </div>
             <br>
-            <button class="dispenser">Zorg dat bewegende content kan worden gepauzeerd, gestopt of worden
+            <button class="accordion">Zorg dat bewegende content kan worden gepauzeerd, gestopt of worden
                 uitgezet</button>
             <div class="panel">
                 <ul>
@@ -97,7 +97,7 @@
                 </ul>
             </div>
             <br>
-            <button class="dispenser">Gebruik geen content dat meer dan 3 keer per seconde flitst</button>
+            <button class="accordion">Gebruik geen content dat meer dan 3 keer per seconde flitst</button>
             <div class="panel">
                 <ul>
                     <li></li>
@@ -107,8 +107,13 @@
             </div>
             <br>
         </main>
+        <footer>
+            <p>Vond u deze pagina nuttig?</p>
+            <button type="button" name="ja-nee-button">Ja</button> <button type="button"
+                name="ja-nee-button">Nee</button>
+        </footer>
         <script>
-            var acc = document.getElementsByClassName("dispenser");
+            var acc = document.getElementsByClassName("accordion");
             var i;
 
             for (i = 0; i < acc.length; i++) {

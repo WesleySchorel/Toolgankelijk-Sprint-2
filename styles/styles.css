@@ -1,104 +1,143 @@
 body {
-    background-color: #fff;
-    font-family: 'Lato', sans-serif;
-    width: 80%;
-    padding: 50px;
-    margin: 0 auto;
-  }
-  
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+  width: 80%;
+  padding: 50px;
+  margin: 0 auto;
+}
+
 main {
-    max-width: 760px;
-    margin: 0 auto;
-  }
-  
-  header {
-    margin-bottom: 70px;
-  }
-  
-  header > p {
-    font-size: 22px;
-  }
-  
-  .dispenser {
-    background-color: #b9005f;
-    color: #fff;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-  
-  .active, .dispenser:hover {
-    background-color: #e80078;
-    color: #fff;
-  }
+  max-width: 760px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  font-size: 18px;
+}
 
-  .dispenser:after {
-    content: '\002B';
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2212";
-  }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-  
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  font-size: 18px;
+  text-align: center;
+}
 
-  
+.accordion {
+  background-color: #b9005f;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #e80078;
+  color: #fff;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 
 
 
+
+
+.all-overview {
+  font-size: 10em;
+}
 
 .sidebar {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #b9005f;
-    overflow-x: hidden;
-    padding-top: 16px;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #b9005f;
+  overflow-x: hidden;
+  padding-top: 16px;
 }
 
 .sidebar a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #ffffff;
-    display: block;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
 }
 
 .sidebar a:hover {
-    color: #ffc2e2;
+  color: #ffc2e2;
 }
 
 .main {
-    margin-left: 160px;
-    /* Same as the width of the sidenav */
-    padding: 0px 10px;
+  margin-left: 160px;
+  /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+
+button {
+  color: #ffffff;
+  background-color: #b9005f;
+  font-size: 19px;
+  border: 1px solid #b9005f;
+  padding: 15px 50px;
+  cursor: pointer
+}
+button:hover {
+  color: #b9005f;
+  background-color: #ffffff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b9005f; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e80078; 
 }
 
 @media screen and (max-height: 450px) {
-    .sidebar {
-        padding-top: 15px;
-    }
+  .sidebar {
+    padding-top: 15px;
+  }
 
-    .sidebar a {
-        font-size: 18px;
-    }
+  .sidebar a {
+    font-size: 18px;
+  }
 }

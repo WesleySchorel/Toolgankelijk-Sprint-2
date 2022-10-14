@@ -7,10 +7,10 @@ body {
 }
 
 main {
-  max-width: 760px;
   margin: 0 auto;
   margin-bottom: 70px;
   font-size: 18px;
+  line-height: 1.6;
 }
 
 footer {
@@ -21,8 +21,26 @@ footer {
   text-align: center;
 }
 
+pre {
+  background: #88888853;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px;
+}
+
+code {
+  background: #88888853;
+  border: 1px solid;
+}
+
+
+
 #feedback-button{
   margin: 22px;
+}
+
+.infobackground {
+  background: #ffc2e2;
 }
 
 .accordion {
@@ -34,7 +52,7 @@ footer {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 16px;
+  font-size: 18px;
   transition: 0.4s;
 }
 
@@ -160,6 +178,14 @@ button:hover {
     width: 10em;
   }
 
+  pre {
+    background: #88888853;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px;
+    overflow-x: scroll;
+  }
+
   .main{
     margin: 0;
   }
@@ -167,6 +193,8 @@ button:hover {
   .sidebar a {
     display: none;
   }
+  
+  
 }
 
 

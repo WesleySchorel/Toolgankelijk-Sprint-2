@@ -15,6 +15,18 @@ Mijn userstory: Als organisatie wil ik meer informatie over een toegankelijkheid
 ## Beschrijving
 Hieronder vind je screenshots van hoe de huidige website van dit project er uit ziet.
 
+![image](https://user-images.githubusercontent.com/112857487/195817370-ea39f27d-8c30-480e-820a-b3897fd0ce47.png)
+
+![image](https://user-images.githubusercontent.com/112857487/195817566-2968b313-5b0d-480e-a642-4000c4f8e832.png)
+
+![image](https://user-images.githubusercontent.com/112857487/195817877-b9a21d4c-d5b3-4a4b-a5cf-31ae75d049c2.png)
+
+![image](https://user-images.githubusercontent.com/112857487/195817703-6f98ed24-6d2d-45b2-80c4-ebde94ef634d.png)
+
+![image](https://user-images.githubusercontent.com/112857487/195817798-9dffa3b2-8239-47e6-928a-8fdd840a1029.png)
+
+
+
 Deze pagina is te vinden onder: https://wesleyschorel.github.io/the-client-case/Afbeeldingen.html
 
 ## Kenmerken

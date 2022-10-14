@@ -17,7 +17,7 @@ Hieronder vind je screenshots van hoe de huidige website van dit project er uit 
 
 ![image](https://user-images.githubusercontent.com/112857487/195817370-ea39f27d-8c30-480e-820a-b3897fd0ce47.png)
 
-![image](https://user-images.githubusercontent.com/112857487/195817566-2968b313-5b0d-480e-a642-4000c4f8e832.png)
+![image](https://user-images.githubusercontent.com/112857487/195818145-0a518d73-b827-4c69-9ab9-efa2de85baf5.png)
 
 ![image](https://user-images.githubusercontent.com/112857487/195817877-b9a21d4c-d5b3-4a4b-a5cf-31ae75d049c2.png)
 

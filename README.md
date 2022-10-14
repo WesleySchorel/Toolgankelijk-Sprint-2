@@ -1,4 +1,4 @@
-Vervoerregio Amsterdam - Huidige Versie:
+# Vervoerregio Amsterdam
 De Vervoerregio Amsterdam verbindt gemeenten en werkt aan een regio waar mensen vlot hun bestemming bereiken. De gemeenten Aalsmeer, Amstelveen, Amsterdam, Diemen, Edam-Volendam, Haarlemmermeer, Landsmeer, Oostzaan, Ouder-Amstel, Purmerend, Uithoorn, Waterland, Wormerland en Zaanstad vormen samen de Vervoerregio Amsterdam. Vanaf 1 januari 2022 zijn gemeente Beemster en gemeente Purmerend samengegaan en bestaat de Vervoerregio sindsdien uit veertien gemeenten.
 
 Mijn userstory: Als organisatie wil ik meer informatie over een toegankelijkheidsverbetering kunnen lezen zodat ik beter begrijp waarom en hoe het helpt mijn website/app toegankelijker te maken
@@ -17,7 +17,7 @@ Hieronder vind je screenshots van hoe de huidige website van dit project er uit 
 
 Deze pagina is te vinden onder: https://wesleyschorel.github.io/the-client-case/Afbeeldingen.html
 
-## enmerken
+## Kenmerken
 De website bestaat voor het grootste deel uit HTML, een groot deel uit CSS en er is een klein beetje gebruik gemaakt van JavaScript.
 
 ## Bronnen

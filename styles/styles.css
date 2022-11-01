@@ -33,7 +33,19 @@ code {
   border: 1px solid;
 }
 
+img.right { 
+  float: right; 
+  margin: 0.5em 0 1em 1em; 
+  clear: right; 
+  width: 28em;
+}
 
+img.left { 
+  float: left; 
+  margin: 0.5em 0 1em 1em; 
+  clear: left; 
+  width: 28em;
+}
 
 #feedback-button{
   margin: 22px;
@@ -84,8 +96,6 @@ code {
 
 
 
-
-
 .all-overview {
   font-size: 10em;
 }
@@ -100,6 +110,7 @@ code {
   background-color: #b9005f;
   overflow-x: hidden;
   padding-top: 16px;
+  box-shadow: 3px 0px;
 }
 
 .sidebar a {

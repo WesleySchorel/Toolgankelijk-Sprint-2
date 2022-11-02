@@ -3,17 +3,55 @@ main ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     gap: 1em;
   }
   
   main li {
-    background: hotpink;
-    border: 1px solid white;
-    width: 8em;
-    height: 4em;
+    background: white;
+    border: 2px solid #b9005f;
+    width: 16em;
+    height: 12em;
   }
   
   main li:nth-of-type(odd) {
-    background: red;
+    background: white;
   }
+
+
+  .my-checkbox {
+    transform: scale(2);
+    margin-right: 11px;
+  }
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

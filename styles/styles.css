@@ -1,10 +1,23 @@
 body {
   font-family: Verdana, sans-serif;
-  background-color: #fff;
+  background-color: white;
+  color: black;
   font-family: 'Lato', sans-serif;
   width: 80%;
   padding: 50px;
   margin: 0 auto;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
 }
 
 main {
